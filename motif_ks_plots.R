@@ -10,7 +10,7 @@ library(ggrepel)
 
 es <- 0.2
 esm <- 1.5
-pv <- -log10(0.0000000001)
+pv <- -log10(0.01)
 
 # calculate density. https://slowkow.com/notes/ggplot2-color-by-density/:
 get_density <- function(x, y, ...) {
