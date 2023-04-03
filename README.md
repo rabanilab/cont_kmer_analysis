@@ -34,6 +34,8 @@ For the analysis itself a csv/tsv file with the parameters the analysis should b
 - param_name
 - param_val
 
+See example for file [here](drerio_3UTR_ensembl103/paramaters.tsv).
+
 multiple parameters can be calculated at once, just make sure to name them separately in the param_name column, with 
 the respective value in the param_value column. The category can be used to run th eanalysis only on specific parameters 
 from the same file.
