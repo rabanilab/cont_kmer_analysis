@@ -1,4 +1,4 @@
-# kmer analysis
+# kmer analysis for continuous properties
 
 ## Preparing the kmer tables
 In order to speed up the analysis, precalculate for each gene what kmers it includes. 
@@ -6,7 +6,7 @@ This calculation needs to be run once, and then the kmer prediction can be run f
 If you're using one of the precalculated organisms you can skip this section.
 
  
-First, Download all sequences from ensembl biomart  
+First, download all sequences from ensembl biomart  
 ```
 make download_fasta dtype=3utr ORGANISM=mmusculus_gene_ensembl FASTA_FILE=biomart_mmusculus_gene_ensembl_3utr_ensembl109.fasta
 ```
