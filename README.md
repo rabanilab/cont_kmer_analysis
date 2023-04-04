@@ -1,5 +1,12 @@
 # kmer analysis for continuous properties
 
+This package allows you to identify short sequences (kmers) that are over-represented within 
+regulatory sequences of genes relative to a continuous property.
+
+For example, use this package to identify short sequences that are over-represented within 
+the 3’UTR sequences of genes with either faster or slower degradation rates.
+
+
 ## Preparing the kmer tables
 In order to speed up the analysis, precalculate for each gene what kmers it includes. 
 This calculation needs to be run once, and then the kmer prediction can be run for different parameters using this. 
