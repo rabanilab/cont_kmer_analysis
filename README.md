@@ -15,13 +15,13 @@ If you're using one of the precalculated organisms you can skip this section.
  
 First, download all sequences from ensembl biomart  
 ```
-make download_fasta dtype=3utr ORGANISM=mmusculus_gene_ensembl FASTA_FILE=biomart_mmusculus_gene_ensembl_3utr_ensembl109.fasta
+make download_fasta dtype=3utr ORGANISM=mmusculus_gene_ensembl FASTA_FILE=biomart_mmusculus_gene_ensembl_3utr_ensembl99.fasta
 ```
 
 Next, the downloaded fasta file needs to be filtered to exclude missing sequences, sequences that are too short and keep 
 only one sequence per gene.
 ```
-make create_fastas_all dtype=3utr FASTA_FILE=biomart_mmusculus_gene_ensembl_3utr_ensembl109.fasta
+make create_fastas_all dtype=3utr FASTA_FILE=biomart_mmusculus_gene_ensembl_3utr_ensembl99.fasta
 ```
 
 The last step in this section includes calculating the tables themselves, and then splitting them into smaller tables so 
@@ -37,7 +37,7 @@ make split_tables dtype=3utr
 
 For the analysis itself a csv/tsv file with the parameters the analysis should be run on. The file should include 4 columns:
 - category
-- ensembl_gene_id
+- ensembl_gene_id (or gene_name, see note)
 - param_name
 - param_val
 
