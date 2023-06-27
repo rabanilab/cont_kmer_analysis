@@ -62,8 +62,8 @@ split_tables:
 # ----------------------------------------------------------
 
 unzip_kmer_files:
-	cat *.csv.tar.gz | tar zxvf - -i; \
-	rm -rf *.csv.tar.gz;
+	cat $(ORGANISM)/3utr/kmer_matrices_comp/*.csv.tar.gz | tar zxvf - -i; \
+	rm -rf $(ORGANISM)/3utr/kmer_matrices_comp/*.csv.tar.gz;
 
 # ----------------------------------------------------------
 # kmer analysis
