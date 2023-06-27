@@ -62,7 +62,7 @@ split_tables:
 # ----------------------------------------------------------
 
 unzip_kmer_files:
-	gunzip -S .tar.gz cont_kmer_analysis/$(ORGANISM)/3utr/kmer_matrices_comp/*.csv.tar.gz;
+	gunzip -S .tar.gz $(ORGANISM)/3utr/kmer_matrices_comp/*.csv.tar.gz;
 
 # ----------------------------------------------------------
 # kmer analysis
