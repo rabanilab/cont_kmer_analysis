@@ -52,7 +52,7 @@ To run analysis:
 1. Calculate the k-s test p-values and the effect size:
 
    ```
-   make run_ks_test_job path_to_kmer_matrices=3utr/kmer_matrices PARAMETERS_FILE=parameters.tsv output_path=3utr/kmer_out term=half_life 
+   make run_ks_test path_to_kmer_matrices=3utr/kmer_matrices PARAMETERS_FILE=parameters.tsv output_path=3utr/kmer_out term=half_life 
    ```
 
 2. Create plots:
