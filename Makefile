@@ -58,6 +58,13 @@ split_tables:
 	Rscript split_tables.R $(dtype)/kmer_matrices
 
 # ----------------------------------------------------------
+# extract tables downloaded from directory
+# ----------------------------------------------------------
+
+unzip_kmer_files:
+	gunzip -S .tar.gz cont_kmer_analysis/$(ORGANISM)/3utr/kmer_matrices_comp/*.csv.tar.gz;
+
+# ----------------------------------------------------------
 # kmer analysis
 # (1) make run_ks_test_job
 # (2) make ks_tests_plots
